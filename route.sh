@@ -11,7 +11,7 @@ if [ "$(id -u)" != "0" ]; then
     exit 1
 fi
 
-while getopts l:f:c flag
+while getopts l:f:c: flag
 do
     case "${flag}" in
         l) listen=${OPTARG};;
